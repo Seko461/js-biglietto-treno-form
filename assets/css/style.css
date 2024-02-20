@@ -3,3 +3,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    height: 80vh;
+    border: 1px solid black;
+
+}
+
+.top,
+.bottom {
+    border: 1px solid black;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid black;
+    width: 80%;
+    height: 80%;
+    padding: 1rem;
+
+}
+
+.top .row_top {
+    border: 1px solid black;
+    height: calc((100%/12)*8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.row_top>.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.row_top label {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.row_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc((100%/12)*4);
+    gap: 2rem;
+
+}
+
+.card-container {
+    height: 70%;
+    /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.card-container div {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: .75rem .5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.col_1 {
+    flex-grow: 2;
+    border: none;
+    background-color: lightgray;
+}
