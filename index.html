@@ -10,7 +10,67 @@
 </head>
 
 <body>
-    <script src="./assets/js/script.js"></script>
+    <div class="container">
+        <div class="top">
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="card">
+                <div class="row_top">
+                    <div class="col">
+                        <label for="nome_cognome">Nome Cognome</label>
+                        <input type="text" id="nome_cognome" value="">
+                    </div>
+                    <div class="col">
+                        <label for="kilometri">Km da percorrere</label>
+                        <input type="text" id="kilometri" value="">
+                    </div>
+                    <div class="col">
+                        <label for="età">Fascia d'età</label>
+                        <select name="età" id="età">
+                            <option value="Seleziona" selected>Seleziona</option>
+                            <option value="first">Minorenne</option>
+                            <option value="second">Over 65</option>
+                            <option value="third">Maggiorenne</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row_bottom">
+                    <button id="genera">Genera</button>
+                    <button id="annulla">Annulla</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="card">
+                <h3>DETTAGLI PASSEGGERO</h3>
+                <div class="card-container">
+                    <div class="col">
+                        <h4>NOME PASSEGGERO</h4>
+                        <p></p>
+                    </div>
+                    <div class="col">
+                        <h5>Offerta</h5>
+                        <p></p>
+                    </div>
+                    <div class="col">
+                        <h5>Carrozza</h5>
+                        <p></p>
+                    </div>
+                    <div class="col">
+                        <h5>Codice CP</h5>
+                        <p></p>
+                    </div>
+                    <div class="col">
+                        <h5>Costo biglietto</h5>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
