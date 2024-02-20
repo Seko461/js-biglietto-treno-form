@@ -75,6 +75,15 @@ deleteAll.addEventListener('click', () => {
 });
 
 
+function bottomVisible() {
+    var bottom = document.querySelector(".bottom");
+    if (bottom.style.display === "none") {
+        bottom.style.display = "flex";
+    } else {
+        bottom.style.display = "none";
+    }
+}
+
 
 
 
