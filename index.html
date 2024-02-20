@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Train Tocket Form</title>
+    <title>Train Ticket Form</title>
 </head>
 
 <body>
@@ -26,10 +26,10 @@
                     <div class="col">
                         <label for="età">Fascia d'età</label>
                         <select name="età" id="età">
-                            <option value="Seleziona" selected>Seleziona</option>
-                            <option value="first">Minorenne</option>
-                            <option value="second">Over 65</option>
-                            <option value="third">Maggiorenne</option>
+                            <option value="Seleziona">Seleziona</option>
+                            <option id="option_1">Minorenne</option>
+                            <option id="option_2">Over 65</option>
+                            <option id="option_3">Maggiorenne</option>
                         </select>
                     </div>
                 </div>
@@ -46,11 +46,11 @@
                 <div class="card-container">
                     <div class="col_1">
                         <h4>NOME PASSEGGERO</h4>
-                        <p></p>
+                        <p id="ticket-passenger"></p>
                     </div>
                     <div class="col_2">
                         <h5>Offerta</h5>
-                        <p></p>
+                        <p id="discount"></p>
                     </div>
                     <div class="col_3">
                         <h5>Carrozza</h5>
@@ -62,7 +62,7 @@
                     </div>
                     <div class="col_5">
                         <h5>Costo biglietto</h5>
-                        <p></p>
+                        <p id="final-price"></p>
                     </div>
                 </div>
             </div>

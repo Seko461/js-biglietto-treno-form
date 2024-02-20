@@ -24,3 +24,52 @@
 //     Nota: Se non vi sentite particolarmente creativi, questa potrebbe essere
 // un’implementazione da seguire per il secondo milestone.Potete scegliere di implementare 
 // una soluzione completamente diversa oppure simile, ma in ogni caso cercate di farla vostra.
+
+
+const passenger = document.getElementById('nome_cognome');
+
+
+const generate = document.getElementById('genera');
+
+
+
+generate.addEventListener('click', () => {
+    const km = document.getElementById('kilometri');
+    const price = km.value * 0.21;
+
+    const select = document.getElementById('età');
+    let selection = select.selectedIndex;
+    let option = select.options[selection];
+    let optionValue = option.value;
+
+
+
+    const ticketPassenger = document.getElementById('ticket-passenger');
+    let discount = document.getElementById('discount');
+    let finalPrice = document.getElementById('final-price');
+    ticketPassenger.innerHTML = passenger.value
+    if (optionValue == 'Minorenne') {
+        let min_rounded = (price - (price * 0.20)).toFixed(2);
+        console.log(min_rounded)
+        discount.innerHTML = 'Minori'
+        finalPrice.innerHTML = '€ ' + min_rounded
+    }
+    else if (optionValue == 'Over 65') {
+        let max_rounded = (price - (price * 0.40)).toFixed(2);
+        console.log(max_rounded)
+        discount.innerHTML = 'Over'
+        finalPrice.innerHTML = '€ ' + max_rounded
+    }
+    else if (optionValue == 'Maggiorenne') {
+        let regular = price.toFixed(2);
+        console.log(regular)
+        discount.innerHTML = 'Standard'
+        finalPrice.innerHTML = '€ ' + regular
+    }
+
+
+});
+
+
+
+
