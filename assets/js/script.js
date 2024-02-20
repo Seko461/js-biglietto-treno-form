@@ -67,6 +67,14 @@ generate.addEventListener('click', () => {
 
 });
 
+const deleteAll = document.getElementById('annulla');
+
+deleteAll.addEventListener('click', () => {
+
+    location.reload();
+});
+
+
 
 
 
